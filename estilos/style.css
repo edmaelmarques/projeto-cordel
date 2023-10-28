@@ -1,0 +1,97 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'NomeDaSuaFonte';
+    src: url('../fontes/DancingScript-VariableFont_wght.ttf') format('woff');
+    /* Outros formatos de fonte aqui, se necessário */
+}
+@import url('https://fonts.googleapis.com/css2? family= Bebas+Neue & family= Sriracha & display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Bebas+Neue & family= Passion+One & family= Sriracha & display=swap');
+:root{
+    --fonte1:   Verdana, Geneva, Tahoma, sans-serif;
+    --font2:'Passion One', sem serifa;
+    --font3: 'NomeDaSuaFonte';
+    
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html, body{
+    min-height: 100vh;
+    background-color: rgb(73, 71, 71);
+    font-family: var(--fonte1);
+    
+}
+header{
+    
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+header>h1{
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--font2);
+    font-weight: bolder;
+    font-size: 10vh;
+
+}
+header>p{
+    padding-bottom: 50px;
+}
+a{
+    text-decoration: none;
+    font-weight: bolder;
+    color: white;
+
+}
+a:hover{
+    text-decoration: underline;
+}
+section{
+    padding-bottom:  5vh;
+    padding-top: 5vh;
+    padding-left: 5vh;
+    line-height: 1.2em;
+    font-family: var(--font3);
+    font-size: 3vw;
+    font-weight: bolder;
+    box-shadow: inset 3px 3px 13px 0px rgba(0, 0, 0, 0.269);
+    background-attachment: fixed;
+}
+section>p{
+    margin-bottom: 2em;
+}
+section.imagem{
+
+    background-color:#393838;
+    color: white;
+}
+section.imagem>p{
+    background-color:#0000005a;
+    display: inline-block;
+    padding: 5vh;
+    border-radius: 3px;
+    box-shadow: 10px 10px 10px 10px  rgba(0, 0, 0, 0.114) ;
+}
+section#img01{
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+    background-size: cover;
+}
+section#img02{
+    background-image: url(../imagens/background002.jpg);
+    background-position: left  center;
+    background-size: cover;
+}
+section.normal{
+    background-color:white;
+   
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
